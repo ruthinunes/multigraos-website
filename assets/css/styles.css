@@ -1,0 +1,75 @@
+/*=============== google fonts ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600&display=swap");
+
+/*=============== variables css ===============*/
+:root {
+  --header-height: 5.6rem;
+  --border-section: 56px 56px 0 0;
+
+  /*========== colors ==========*/
+  --hue-color: 357;
+  --first-color: hsl(var(--hue-color), 66%, 52%);
+  --first-color-alt: hsl(var(--hue-color), 60%, 27%);
+  --first-color-light: hsl(var(--hue-color), 24%, 32%);
+  --second-color: hsl(calc(var(--hue-color) - 316), 59%, 89%);
+  --title-color: hsl(var(--hue-color), 12%, 16%);
+  --text-color: hsl(var(--hue-color), 12%, 32%);
+  --white-color: #fff;
+
+  /*========== font and typography ==========*/
+  --body-font: "Poppins", sans-serif;
+  --second-font: "Pacifico", cursive;
+  --biggest-font-size: 4.4rem;
+  --big-font-size: 2.8rem;
+  --h1-font-size: 2.4rem;
+  --h2-font-size: 2rem;
+  --h3-font-size: 1.6rem;
+  --normal-font-size: 1.5rem;
+  --small-font-size: 1.3rem;
+  --smaller-font-size: 1.2rem;
+
+  /*========== font weight ==========*/
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*======== margin bottom ========*/
+  --mb-4: 0.4rem;
+  --mb-8: 0.8rem;
+  --mb-12: 1.2rem;
+  --mb-16: 1.6rem;
+  --mb-24: 2.4rem;
+  --mb-32: 3.2rem;
+  --mb-40: 4rem;
+  --mb-48: 4.8rem;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/*Font size for large devices */
+@media screen and (min-width: 1024px) {
+  :root {
+    --biggest-font-size: 7.2rem;
+    --big-font-size: 4.8rem;
+    --h1-font-size: 3.6rem;
+    --h2-font-size: 2.4rem;
+    --h3-font-size: 2rem;
+    --normal-font-size: 1.6rem;
+    --small-font-size: 1.4rem;
+    --smaller-font-size: 1.3rem;
+  }
+}
+
+/*=============== base ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
