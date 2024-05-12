@@ -219,12 +219,6 @@ img {
 }
 
 .nav__link i {
-  /* background: linear-gradient(
-    180deg,
-    hsl(39, 62%, 75%) 0%,
-    hsl(39, 62%, 45%) 100%
-  ); */
-  /* color: transparent; */
   background: var(--second-color);
   -webkit-background-clip: text;
   font-size: 2.4rem;
@@ -475,7 +469,8 @@ img {
 
 .steps .section__title,
 .steps__description {
-  color: var(--white-color);
+  color: var(--second-color);
+  text-shadow: 0 8px 32px hsla(12, 32%, 8%, 0.3);
 }
 
 .steps__content {
@@ -492,7 +487,7 @@ img {
 .steps__circle {
   width: 150px;
   height: 150px;
-  background-color: var(--first-color-alt);
+  background-color: hsl(var(--hue-color), 63%, 39%);
   border-radius: 50%;
   box-shadow: 0 8px 32px hsla(12, 32%, 8%, 0.3);
   display: flex;
