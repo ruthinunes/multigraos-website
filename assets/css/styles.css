@@ -49,7 +49,7 @@
 }
 
 /*Font size for large devices */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1023px) {
   :root {
     --biggest-font-size: 7.2rem;
     --big-font-size: 4.8rem;
@@ -546,6 +546,42 @@ img {
   opacity: 0.15;
 }
 
+/*=============== testimonial ===============*/
+.testimonial {
+  background-color: var(--first-color);
+}
+
+.testimonial__bg {
+  background-color: var(--second-color);
+  border-radius: var(--border-section);
+}
+
+.testimonial__container {
+  row-gap: 4.8rem;
+}
+
+.testimonial__data {
+  text-align: center;
+}
+
+.testimonial__description {
+  color: var(--title-color);
+  text-align: center;
+  font-weight: var(--font-regular);
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-12);
+}
+
+.testimonial__name {
+  font-weight: var(--font-medium);
+}
+
+.testimonial__img {
+  width: 320px;
+  border-radius: 1.6rem;
+  justify-self: center;
+}
+
 /*=============== scroll bar ===============*/
 ::-webkit-scrollbar {
   width: 0.9rem;
@@ -613,7 +649,8 @@ img {
 
   .home__container,
   .products__container,
-  .about__container {
+  .about__container,
+  .testimonial__container {
     grid-template-columns: 400px;
     justify-content: center;
   }
@@ -783,7 +820,7 @@ img {
   }
 
   .steps__card {
-    width: 272px;
+    width: 250px;
   }
 
   .steps__card-move {
@@ -838,6 +875,20 @@ img {
     height: 100%;
     object-position: initial;
   }
+
+  /*=============== testimonial ===============*/
+  .testimonial__container {
+    grid-template-columns: 510px max-content;
+    align-items: center;
+  }
+
+  .testimonial__img {
+    width: 450px;
+  }
+
+  .testimonial__description {
+    margin-bottom: var(--mb-24);
+  }
 }
 
 @media screen and (min-width: 1152px) {
@@ -870,7 +921,16 @@ img {
   .about__title {
     margin-bottom: var(--mb-48);
   }
+
   .about__img {
+    width: 550px;
+  }
+
+  .testimonial__container {
+    column-gap: 3.2rem;
+  }
+
+  .testimonial__img {
     width: 550px;
   }
 }
