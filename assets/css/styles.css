@@ -800,6 +800,7 @@ img {
 
   .home__container,
   .products__container,
+  .about__container,
   .testimonial__container,
   .footer__container {
     grid-template-columns: 400px;
