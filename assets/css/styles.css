@@ -507,8 +507,9 @@ img {
 }
 
 .steps__card:last-child .steps__img {
-  width: 110px;
-  bottom: 20px;
+  min-width: 176px;
+  bottom: 22px;
+  left: -4px;
 }
 
 .steps__img:hover {
@@ -985,9 +986,9 @@ img {
   }
 
   .steps__card:last-child .steps__img {
-    width: 190px;
-    bottom: 40px;
-    left: 32px;
+    min-width: 300px;
+    bottom: 43px;
+    left: -7px;
   }
 
   .steps__subcircle {
