@@ -205,7 +205,7 @@ img {
 }
 
 .nav__link {
-  color: var(--white-color);
+  color: var(--second-color);
   font-size: 10px;
   display: flex;
   flex-direction: column;
@@ -222,7 +222,7 @@ img {
 }
 
 .nav__link:after {
-  background-color: var(--white-color);
+  background-color: var(--second-color);
   bottom: -10px;
   content: "";
   height: 2px;
