@@ -18,7 +18,6 @@
 
   /*========== font and typography ==========*/
   --body-font: "Poppins", sans-serif;
-  --second-font: "Pacifico", cursive;
   --biggest-font-size: 4.4rem;
   --big-font-size: 2.8rem;
   --h1-font-size: 2.4rem;
@@ -120,8 +119,7 @@ img {
 .section__title {
   color: var(--first-color-alt);
   font-size: var(--big-font-size);
-  font-family: var(--second-font);
-  font-weight: var(--font-regular);
+  font-weight: var(--font-semi-bold);
   line-height: 120%;
   text-align: center;
   margin-bottom: var(--mb-24);
@@ -208,7 +206,6 @@ img {
 
 .nav__link {
   color: var(--white-color);
-  font-family: var(--second-font);
   font-size: 10px;
   display: flex;
   flex-direction: column;
@@ -277,8 +274,6 @@ img {
 .home__title {
   text-align: initial;
   font-size: var(--biggest-font-size);
-  font-family: var(--second-font);
-  font-weight: var(--font-regular);
   line-height: 120%;
   margin: 0 auto var(--mb-32);
   position: relative;
@@ -391,7 +386,6 @@ img {
 }
 
 .products__name {
-  font-family: var(--second-font);
   text-align: center;
   margin-bottom: var(--mb-16);
 }
@@ -471,6 +465,8 @@ img {
 .steps__description {
   color: var(--second-color);
   text-shadow: 0 8px 32px hsla(12, 32%, 8%, 0.3);
+  position: relative;
+  z-index: var(--z-fixed);
 }
 
 .steps__content {
